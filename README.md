@@ -4,6 +4,7 @@ Nalezy jedynie uruchomic xamppa, a w nim uslugi Apache i MySQL. Program samodzie
 
 Kontrolery które nas interesują, znajdują się w paczce pl.edu.wszib.kotarba.ice.skates.controllers.rest
 To tam zaszły jedyne zmiany względem zadania 3
+
 Polecam zaimportować w Insomni plik Insomnia_2022-02-02.json z głównego katalogu repozytorium. Znajdują się tam wszystkie requesty do testowania i dalsza część tej dokumentacji nie jest potrzebna.
 Testowanie endpointow, sprawdzane w Insomni:
 
