@@ -4,10 +4,13 @@ Nalezy jedynie uruchomic xamppa, a w nim uslugi Apache i MySQL. Program samodzie
 
 Kontrolery które nas interesują, znajdują się w paczce pl.edu.wszib.kotarba.ice.skates.controllers.rest
 To tam zaszły jedyne zmiany względem zadania 3
+Polecam zaimportować w Insomni plik Insomnia_2022-02-02.json z głównego katalogu repozytorium. Znajdują się tam wszystkie requesty do testowania i dalsza część tej dokumentacji nie jest potrzebna.
 Testowanie endpointow, sprawdzane w Insomni:
 
 http://localhost:8080/endpoint1 Wyswietlenie wszystkich lyzew w bazie
+
 http://localhost:8080/endpoint2/{skatesId} Wyswietlenie lyzew o okreslonym ID w bazie
+
 http://localhost:8080/endpoint3 Edytuje rekord w bazie lyzew o określonym ID. Przekazujemy JSON, np.:
 {
 	"id": 2,
@@ -19,6 +22,7 @@ http://localhost:8080/endpoint3 Edytuje rekord w bazie lyzew o określonym ID. P
 }
 
 http://localhost:8080/endpoint4 Pokazuje aktualnie zalogowanego uzytkownika. Z niewiadomych dla mnie przyczyn działa jedynie w przeglądarce, a w Insomni wcale
+
 http://localhost:8080/endpoint5 Pozwala bardzo latwo zarejestrowac nowego uzytkownika. Przekazujemy JSON, np.:
 {
 	"id": 1,
@@ -29,5 +33,6 @@ http://localhost:8080/endpoint5 Pozwala bardzo latwo zarejestrowac nowego uzytko
 }
 
 http://localhost:8080/endpoint6 Pokazuje zamowienia aktualnie zalogowanego uzytkownika. Z niewiadomych dla mnie przyczyn również działa jedynie w przeglądarce, a w Insomni wcale
+
 http://localhost:8080/endpoint7 Pokazuje dane uzytkownika którego login przekażemy w nagłówku żądania POST, np.:
 login: piotr
