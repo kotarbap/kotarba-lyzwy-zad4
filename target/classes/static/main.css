@@ -1,0 +1,35 @@
+.skates {
+    border: 1px solid black;
+    margin: 10px;
+    width: 700px;
+    padding: 10px;
+}
+
+.skates .brand {
+    font-size: 22px;
+}
+
+.skates .model {
+    font-size: 18px;
+}
+
+.skates .price {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.skates .size {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.skates .quantity {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.skates div {
+    margin: 10px;
+}

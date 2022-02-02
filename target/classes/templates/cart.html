@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wypozyczalnia Lyzew by Piotr Kotarba</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<div th:replace="fragments.html :: logo"></div>
+<div th:replace="fragments.html :: menu"></div>
+
+<div id="content">
+    <div class="order-position">
+        <div class="brand">Marka</div>
+        <div class="model">Model</div>
+        <div class="quantity">Ilosc</div>
+        <div class="piece-price">Cena jednostkowa</div>
+        <div class="price">Cena</div>
+    </div>
+    <div th:each="position : ${cart.orderPositions}" class="order-position">
+        <div th:text="${position.skates.brand}" class="brand"></div>
+        <div th:text="${position.skates.model}" class="model"></div>
+        <div th:text="${position.quantity}" class="quantity"></div>
+        <div th:text="${position.skates.price + 'zł'}" class="piece-price"></div>
+        <div th:text="${position.skates.price * position.quantity + 'zł'}" class="price"></div>
+    </div>
+    <div class="order-position">
+        <div class="brand"></div>
+        <div class="model"></div>
+        <div class="quantity"></div>
+        <div class="piece-price">Suma</div>
+        <div th:text="${sum + 'zł'}" class="price"></div>
+    </div>
+    <a href="/order">Zamów</a>
+</div>
+</body>
+</html>
